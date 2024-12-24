@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Prism",
+  "version": "1.0.0.1",
+  "description": "Filter out all the short form content from YouTube and Instagram",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://www.instagram.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["./YouTube/contentScript.js"]
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/shorts/*",
+        "https://www.youtube.com/results?search_query=shorts"
+      ],
+      "js": ["./YouTube/shorts.js"]
+    },
+    {
+      "matches": ["https://www.youtube.com/playlist?list=LL"],
+      "js": ["./YouTube/liked.js"]
+    },
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["./Instagram/contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
