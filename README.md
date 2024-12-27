@@ -28,8 +28,28 @@ Here is a very beginner friendly step by step installation process.
 
 ### Download the extension
 
-You can download the extension from the [releases page](https://github.com/Krazy0P/Prism/releases/tag/prism).
+You can download the zip file from the [releases page](https://github.com/Krazy0P/Prism/releases/tag/prism) and unzip it to a folder.
 
+<details>
+    <summary>Unzip on Windows</summary>
+    <ol>
+        <li>Open a explorer window </li>
+        <li>Select the zip file</li>
+        <li>Extract the files by clicking on "Extract All" at the top.</li>
+        <li>Select the location or keep it as it is</li>
+    </ol>
+</details>
+
+<details>
+    <summary>Unzip on Linux</summary>
+    <ol>
+        <li>Open a terminal window.</li>
+        <li>Navigate to the directory where the zip file is located.</li>
+        <li>Run the following command to unzip the file:
+            <pre><code>unzip prism.zip -d /desired/location</code></pre>
+        </li>
+    </ol>
+</details>
 
 ### Or alternatively, clone the repository
 ```sh
