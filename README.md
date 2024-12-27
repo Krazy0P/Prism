@@ -62,7 +62,7 @@ cd Prism
 
 1. Open your browser and go to `chrome://extensions/`. (Don't worry if you're using a different Chromium based browser, it will redirect you to the correct page!)
 2. Enable "Developer mode" by clicking the toggle switch in the top right corner.
-3. Click the "Load unpacked" button and select the cloned repository folder.
+3. Click the "Load unpacked" button and select the unzipped folder or cloned repository folder.
 
 Yay, now your extension should now be loaded and ready to use.
 
