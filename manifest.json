@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Prism",
-  "version": "1.0.0.1",
+  "version": "1.0.0.2",
   "description": "Filter out all the short form content from YouTube and Instagram",
   "permissions": [
     "storage",
@@ -26,6 +26,10 @@
     {
       "matches": ["https://www.youtube.com/playlist?list=LL"],
       "js": ["./YouTube/liked.js"]
+    },
+    {
+      "matches": ["https://www.youtube.com/*/shorts"],
+      "js": ["./YouTube/channel.js"]
     },
     {
       "matches": ["https://www.instagram.com/*"],
