@@ -8,7 +8,8 @@ const cssOBJ = `
     ytd-video-renderer:has(a[href^="/shorts/"]), /* Shorts in normal feed */
     yt-tab-shape[tab-title="Shorts"], /* Shorts button in channel page */
     yt-chip-cloud-chip-renderer:has(yt-formatted-string[title="Shorts"]), /* Shorts in liked videos page */
-    yt-chip-cloud-chip-renderer[chip-style='STYLE_DEFAULT']:has(yt-formatted-string[title="All"]) /* "All" in liked videos page */
+    yt-chip-cloud-chip-renderer[chip-style='STYLE_DEFAULT']:has(yt-formatted-string[title="All"]) /* "All" in liked videos page */,
+    ytd-notification-renderer:has(a[href^="/shorts/"]) /* Shorts in notifications */
     {
         visibility: hidden;
         display: none;
